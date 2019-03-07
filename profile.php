@@ -32,26 +32,6 @@
         <!- profile -->
         <a href="" class="gh"></a>
         <a href="" class="li"></a>
-        <script>
-        function addData(data) {
- data.forEach(function(row) {
-   var str = '<tr>';
-   str += '<td>' + row.id + '</td>';
-   str += '<td>' + row.name + '</td>';
-   str += '<td>' + row.cohort + '</td>';
-   str += '<td>' + row.strengths + '</td>';
-   str += '<td>' + row.credential + '</td>';
-   str += '<td>' + row.portfolio + '</td>';
-   str += '<td>' + row.github + '</td>';
-   str += '<td>' + row.linkedin + '</td>';
-   str += '<td>' + row.biopic + '</td>';
-   str += '<td>' + row.resume + '</td>';
-   str += '<td>' + row.employ + '</td>';
-   str += '</tr>';
-   $('#data_tbl').append(str);
- });
-        }
-        </script>
         <!-- credentials -->
         <ul class="dentials">
             <li></li>
@@ -60,28 +40,34 @@
         <h3></h3>
     </div>
 
+    
+    <?php
+            $d = file_get_contents('assets/data/data.json');
+            $d = json_decode($d, true);
+			
+        
+        
+        foreach($d as $v => $o) {
+            
+            echo '<p>'.$o['name'].'</p>
+                 <p>'.$o['cohort'].'</p>
+                 <p>'.$o['strengths'].'</p>
+                 <p>'.$o['credential'].'</p>
+                 <p>'.$o['portfolio'].'</p>
+                 <p>'.$o['github'].'</p>
+                 <p>'.$o['linkedin'].'</p>
+                 <p>'.$o['biopic'].'</p>
+                 <p>'.$o['resume'].'</p>
+                 <p>'.$o['employ'].'</p>';
+                }
+    ?>
+    
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="assets/js/jquery.js"></script>
     <script src="assets/js/popper.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
-    <?php
-		$d = file_get_contents('data.json');
-		//$d = json_decode($d, true);
-	?>
-    <script>
-        /* custom script here */
-       /* var pf = 
-        var id = window.location.hash.substr(1);
-        for (i in pf) {
-            if (pf[i]['id'] == id) {
-                console.log(pf[i]['name']);
-                $(".container name").html(pf[i]['name']);
-            };
 
-        };
-*/
-    </script>
 </body>
 
 </html>
