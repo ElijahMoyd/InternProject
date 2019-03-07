@@ -32,6 +32,26 @@
         <!- profile -->
         <a href="" class="gh"></a>
         <a href="" class="li"></a>
+        <script>
+        function addData(data) {
+ data.forEach(function(row) {
+   var str = '<tr>';
+   str += '<td>' + row.id + '</td>';
+   str += '<td>' + row.name + '</td>';
+   str += '<td>' + row.cohort + '</td>';
+   str += '<td>' + row.strengths + '</td>';
+   str += '<td>' + row.credential + '</td>';
+   str += '<td>' + row.portfolio + '</td>';
+   str += '<td>' + row.github + '</td>';
+   str += '<td>' + row.linkedin + '</td>';
+   str += '<td>' + row.biopic + '</td>';
+   str += '<td>' + row.resume + '</td>';
+   str += '<td>' + row.employ + '</td>';
+   str += '</tr>';
+   $('#data_tbl').append(str);
+ });
+        }
+        </script>
         <!-- credentials -->
         <ul class="dentials">
             <li></li>
@@ -51,7 +71,7 @@
 	?>
     <script>
         /* custom script here */
-        var pf = <?php echo $d; ?>;
+       /* var pf = 
         var id = window.location.hash.substr(1);
         for (i in pf) {
             if (pf[i]['id'] == id) {
@@ -60,7 +80,7 @@
             };
 
         };
-
+*/
     </script>
 </body>
 

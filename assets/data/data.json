@@ -34,4 +34,16 @@
     "biopic": "users\/3\/",
     "resume": "users\/3\/",
     "employ": null
+}, {
+    "id": 4,
+    "name": null,
+    "cohort": null,
+    "strengths": null,
+    "credential": null,
+    "portfolio": null,
+    "github": null,
+    "linkedin": null,
+    "biopic": "users\/4\/",
+    "resume": "users\/4\/",
+    "employ": null
 }]
