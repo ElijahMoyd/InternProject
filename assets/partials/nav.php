@@ -30,9 +30,9 @@ li a:hover {
 </style>
 <nav>
 <ul>
-  <li><a class="active" href= "home.php">Home</a></li>
-  <li><a href="detail.php">Information</a></li>
-  <li><a href="create.php">Create</a></li>
+  <li><a class="active" href= "Table.php">Alumni</a></li>
+  <li><a href="detail.php">Profile</a></li>
+  <li><a href="create.php">Add Student</a></li>
     </ul>
 
 

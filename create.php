@@ -11,9 +11,9 @@
 </head>
 
 <body>
-    
+
     <?php require("assets/partials/nav.php");?>
-    
+
     <div class="container">
         <h1>Create and Update</h1>
         <form action="process.php" enctype="multipart/form-data" method="post">
@@ -34,9 +34,9 @@
                 <br>
             </label>
             <br>
-              <span id="response"></span>
+            <span id="response"></span>
             <input type="button" onclick="addInput()" value="addmore" />
-          
+
             <script>
                 var countBox = 1;
 
@@ -50,10 +50,10 @@
             <br><br>
             <h4>Credentials</h4>
             <label>
-                <input type="checkbox" name="credential[]" value="Photoshop">  Photoshop
+                <input type="checkbox" name="credential[]" value="Photoshop"> Photoshop
             </label>
             <br>
-            <label> 
+            <label>
                 <input type="checkbox" name="credential[]" value="Javascript"> JavaScript
             </label>
             <br>
@@ -73,15 +73,15 @@
                 <input type="file" name="resume">
             </label>
             <br>
-            
+
             <h4>Employed</h4>
             <label>Yes <br>
                 <input type="radio" name="employ" value="true">
             </label>
             <br>
-            <input type="submit"  name="sub" value="submit">
-            
-    
+            <input type="submit" name="sub" value="submit">
+
+
         </form>
 
     </div>
