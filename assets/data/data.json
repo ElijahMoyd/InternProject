@@ -1,1 +1,37 @@
-[{"id":1,"name":"Robert","cohort":"5","strengths":"Drawing","credential":["Javascript"],"portfolio":"Portfolio.com","github":"Github.com","linkedin":"linkedin.com","biopic":"users\/1\/10000010814.jpg","resume":"users\/1\/JCaraballo_CoverLetter(GraphicDesigner).pdf","employ":null},{"id":2,"name":"Elijah","cohort":"15","strengths":"Wordpress","credential":["Photoshop","Javascript"],"portfolio":"Portfolio.com","github":"Github.com","linkedin":"linkedin.com","biopic":"users\/2\/_83351965_explorer273lincolnshirewoldssouthpicturebynicholassilkstone.jpg","resume":"users\/2\/Margarita Pacheco Food Handler Resume.docx","employ":"true"}]
+[{
+    "id": 1,
+    "name": "Robert",
+    "cohort": "5",
+    "strengths": "Drawing",
+    "credential": ["Javascript"],
+    "portfolio": "Portfolio.com",
+    "github": "Github.com",
+    "linkedin": "linkedin.com",
+    "biopic": "users\/1\/10000010814.jpg",
+    "resume": "users\/1\/JCaraballo_CoverLetter(GraphicDesigner).pdf",
+    "employ": null
+}, {
+    "id": 2,
+    "name": "Elijah",
+    "cohort": "15",
+    "strengths": "Wordpress",
+    "credential": ["Photoshop", "Javascript"],
+    "portfolio": "Portfolio.com",
+    "github": "Github.com",
+    "linkedin": "linkedin.com",
+    "biopic": "users\/2\/_83351965_explorer273lincolnshirewoldssouthpicturebynicholassilkstone.jpg",
+    "resume": "users\/2\/Margarita Pacheco Food Handler Resume.docx",
+    "employ": "true"
+}, {
+    "id": 3,
+    "name": "soto",
+    "cohort": "3",
+    "strengths": ["str1", "str2", "str3"],
+    "credential": null,
+    "portfolio": "port.com",
+    "github": "git.com",
+    "linkedin": "link.com",
+    "biopic": "users\/3\/",
+    "resume": "users\/3\/",
+    "employ": null
+}]

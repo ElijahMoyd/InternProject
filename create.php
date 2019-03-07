@@ -30,11 +30,23 @@
             </label>
             <br>
             <label> List Strengths<br>
-                <input type="text" name="str">
+                <input type="text" name="str[]">
                 <br>
             </label>
             <br>
-            <button class="btn btn-primary">Add more</button>
+              <span id="response"></span>
+            <input type="button" onclick="addInput()" value="addmore" />
+          
+            <script>
+                var countBox = 1;
+
+                function addInput() {
+                    document.getElementById('response').innerHTML += '<br/><input type="text" id="' + '" value="' + '" " + name="str[]" /><br/>';
+                    countBox += 1;
+                }
+
+            </script>
+            <br><br>
             <br><br>
             <h4>Credentials</h4>
             <label>

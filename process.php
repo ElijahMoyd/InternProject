@@ -48,11 +48,11 @@ $a = array(
 "biopic" => $img,    
 "resume" => $ig,    
 "employ" =>    $employed);
-//print_r($a);
+print_r($a);
 array_push ($d, $a);
 $d = json_encode($d);
 file_put_contents('assets/data/data.json', $d);
 
-header('location: home.php');
+//header('location: home.php');
 
 ?>
