@@ -73,13 +73,14 @@
             <?php
 					$d = file_get_contents('assets/data/data.json');
 					$d = json_decode($d, true);
+            
+        
 					
-					foreach($d as $v){
+					foreach($d as $v => $o){
  
            echo '<tr>
-					<td>'.++$d.'</td>
-					<td>'.$name['name'].'</td>
-					<td>'.$cohort['cohort'].'</td>
+					<td>'.$o['name'].'</td>
+					<td>'.$o['cohort'].'</td>
                  </tr>';
 					}
                     
