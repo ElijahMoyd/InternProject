@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
 	<!-- Required meta tags -->
 	<meta charset="utf-8">
@@ -7,19 +8,21 @@
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
 	<link rel="stylesheet" href="assets/css/style.css">
-	<title>OBT Cohort Database</title>
+	<title> OBT Cohort Database</title>
 	<style>
 		/*custom page css here*/
 	</style>
 </head>
+
 <body>
+    <center>
 	<?php require_once('assets/partials/nav.php')?>
 	<!-- HTML here. -->
-    <center><h1>OBT Cohort Database</h1></center>
-    <center><p><a href="home.php" class="btn-primary btn">Back to Home</a></p></center>
-	<center><div class="container">
-		<h2>Registration</h2>
-		<form action="regprocess.php" method="post" enctype="multipart/form-data">
+	<h1>OBT Cohort Database</h1>
+	<p><a href="home.php" class="btn-primary btn">Back to Home</a></p>
+	<div class="container">
+		<h2>Login</h2>
+		<form action="loginprocess.php" method="post">
 			<label>Email <br>
 				<input type="text" name="email">
 			</label>
@@ -27,11 +30,11 @@
 			<label>Password <br>
 				<input type="password" name="pw">
 			</label>
-			<br> 
 			<br>
-			<input type="submit" value="Register" >
+			<input type="submit" value="Login">
 		</form>
-        </div></center>
+	</div>
+    </center>                   
 	<!-- Optional JavaScript -->
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 	<script src="assets/js/jquery.js"></script>

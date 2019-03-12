@@ -3,7 +3,7 @@
 $e = $_POST['email']; 
 $p = $_POST['pw']; 
 
-$d = file_get_contents('user.json');
+$d = file_get_contents('assets/data/user.json');
 $d = json_decode($d,true);
 
 foreach( $d as $k => $v){
@@ -12,7 +12,7 @@ foreach( $d as $k => $v){
         $_SESSION['img'] = $V["img"]
             header('location: appprofile.php'); 
         }else{
-            header('location:../ applogin.php');
-        };
+            header('location: applogin.php');
+        }; 
     };
 ?>
