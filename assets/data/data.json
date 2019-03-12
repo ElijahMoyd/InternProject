@@ -1,1 +1,25 @@
-[{"id":1,"name":"Robert","cohort":"5","strengths":"Drawing","credential":["Javascript"],"portfolio":"Portfolio.com","github":"Github.com","linkedin":"linkedin.com","biopic":"users\/1\/10000010814.jpg","resume":"users\/1\/JCaraballo_CoverLetter(GraphicDesigner).pdf","employ":null},{"id":2,"name":"Elijah","cohort":"15","strengths":["Wordpress"],"credential":["Photoshop","Javascript"],"portfolio":"link","github":"link","linkedin":"link","biopic":"users\/2\/","resume":"users\/2\/","employ":null}]
+[{
+    "id": 1,
+    "name": "Robert",
+    "cohort": "5",
+    "strengths": "Drawing",
+    "credential": ["Javascript"],
+    "portfolio": "Portfolio.com",
+    "github": "Github.com",
+    "linkedin": "linkedin.com",
+    "biopic": "users\/1\/10000010814.jpg",
+    "resume": "users\/1\/JCaraballo_CoverLetter(GraphicDesigner).pdf",
+    "employ": null
+}, {
+    "id": 2,
+    "name": "Elijah",
+    "cohort": "15",
+    "strengths": ["Wordpress"],
+    "credential": ["Photoshop", "Javascript"],
+    "portfolio": "link",
+    "github": "link",
+    "linkedin": "link",
+    "biopic": "users\/2\/",
+    "resume": "users\/2\/",
+    "employ": null
+}]

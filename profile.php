@@ -18,7 +18,7 @@
 <body>
     <!-- HTML here. -->
     <?php require('assets/partials/nav.php'); ?>
-    <div class="container">
+    <div class="tainer">
         <img src="">
         <!--cohort-->
         <h3 class="name"></h3>
