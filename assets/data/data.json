@@ -2,7 +2,7 @@
     "id": 1,
     "name": "Robert",
     "cohort": "5",
-    "strengths": "Drawing",
+    "strengths": ["Drawing"],
     "credential": ["Javascript"],
     "portfolio": "Portfolio.com",
     "github": "Github.com",

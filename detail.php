@@ -1,3 +1,10 @@
+<?php
+	$x = $_SERVER['QUERY_STRING'];
+	if( $x == '' ){
+		header('location:detail.php');
+	};
+?>
+
 <!DOCTYPE>
 <html>
 
@@ -15,43 +22,52 @@
 </head>
 
 <body>
-
+    <?php
+        $d = file_get_contents('assets/data/data.json');
+        $d = json_decode($d, true);
+        
+        foreach($d as $v => $o) {
+            if($o['id']== $x){
+                $w = $d[$v];
+                
+            };
+        print_r($w);
+        };
+    
+    ?>
     <div class="container">
-        <h1>Detail</h1>
-        <div class="row">
-            <div class="col-md-4">
-                <img src="https://static1.squarespace.com/static/549dd0cee4b029881efa814b/5b101ad2758d46ee70365c19/5b101b0588251bbe83b3ee2b/1543878073891/dc-headshot-photographer-68.JPG" class="img-fluid">
-            </div>
-            <div class="col-md-8">
-                <p>Name: Jose Rivera</p>
-                <p>Cohort: 16</p>
-            </div>
-        </div>
-
+            <h1><?php echo $w['name']?></h1><br>
+            <h3><?php echo $w['cohort']?></h3><br>
+            <img src="<?php echo $w['biopic']?>" class="img-fluid"><br>
+    
+       
         <h2>Strengths</h2>
         <ul>
-            <li>strength</li><br>
-            <li>strength</li><br>
-            <li>strength</li>
+            <?php 
+            foreach($w['strengths'] as $a => $b){
+                
+                echo'<li>'.$b.'</li> ';
+            };    
+            ?>
         </ul>
-
         <h2>Credentials</h2>
-        <form action="/action_page.php">
-            <input type="radio" name="Javascript" value="Credential"> Javascript<br>
-            <input type="radio" name="Photoshop" value="Credential"> Photoshop<br>
+        <ul>
+            <?php 
+            foreach($w['credentials'] as $a => $b){
+                
+                echo'<li>'.$b.'</li> ';
+            };
+            
+            ?>
+        </ul>
+        <h2>Profiles</h2>
 
-            <p>
-                <a href="https://www.linkedin.com/" target="_blank">linkedin</a><br>
-                <a href="https://github.com/" target="_blank">Github</a><br>
-                <a href="https://www.resume.com/" target="_blank">Resume</a><br>
-                <a href="https://portfolio.adobe.com/" target="_blank">Portfolio</a>
-            </p>
-            <form action="/action_page.php">
-                <input type="checkbox" name="Employ" value="Yes"> Employed<br>
-                <input type="submit" value="Update">
-            </form>
-        </form>
+        <a href="<?php echo $w['github']?>">github</a><br>
+        <a href="<?php echo $w['portfolio']?>">portfolio</a><br>
+        <a href="<?php echo $w['linkedin']?>">linkdin</a><br>
+
     </div>
+
 </body>
 
 </html>

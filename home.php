@@ -77,9 +77,11 @@
         
 					
 					foreach($d as $v => $o){
+                        
+                        
  
            echo '<tr>
-					<td>'.$o['name'].'</td>
+					<td>'.$o['name']. '</td>
 					<td>'.$o['cohort'].'</td>
                  </tr>';
 					}

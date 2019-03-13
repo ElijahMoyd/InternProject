@@ -33,7 +33,7 @@
 <body>
     <?php include("assets/partials/nav.php");?>
 
-    <div class="container">
+    <div class="tainer">
         <div class="topnav">
             <input type="text" placeholder="Search..">
         </div>
@@ -47,7 +47,7 @@
             </tr>
             <tr>
                 <td>
-                    <a href="detail.html">Name</a>
+                <a href="detail.html">Name</a>
                 <td>Cohort</td>
             </tr>
             <tr>
@@ -79,7 +79,7 @@
 					foreach($d as $v => $o){
  
            echo '<tr>
-					<td>'.$o['name'].'</td>
+					<td><a href="detail.php?'.$o['id'].'">'.$o['name'].'</a></td>
 					<td>'.$o['cohort'].'</td>
                  </tr>';
 					}
