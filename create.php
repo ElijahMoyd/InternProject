@@ -48,6 +48,7 @@
             </script>
             <br><br>
             <br><br>
+
             <h4>Credentials</h4>
             <label>
                 <input type="checkbox" name="credential[]" value="Photoshop"> Photoshop
@@ -56,7 +57,7 @@
             <label>
                 <input type="checkbox" name="credential[]" value="Javascript"> JavaScript
             </label>
-            <br>
+            <br>            
             <label>Portfolio<br>
                 <input type="text" name="portfolio" value="link">
             </label>

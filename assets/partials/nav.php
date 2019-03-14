@@ -31,7 +31,7 @@ li a:hover {
 <nav>
 <ul>
   <li><a class="active" href= "Table.php">Alumni</a></li>
-  <li><a href="detail.php">Profile</a></li>
+  
   <li><a href="create.php">Add Student</a></li>
     <li> <a href="appreg.php">Register</a></li>
     <li> <a href="applogin.php">Login</a></li>
