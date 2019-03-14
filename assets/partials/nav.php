@@ -25,7 +25,7 @@ li a {
 }
 
 li a:hover {
-  background-color: plum;
+  background-color: rgb(190,213,59);
 }
 </style>
 <nav>

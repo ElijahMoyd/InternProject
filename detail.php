@@ -31,7 +31,7 @@
                 $w = $d[$v];
                 
             };
-        print_r($w);
+        //print_r($w);
         };
     
     ?>
@@ -62,9 +62,9 @@
         </ul>
         <h2>Profiles</h2>
 
-        <a href="<?php echo $w['github']?>">github</a><br>
-        <a href="<?php echo $w['portfolio']?>">portfolio</a><br>
-        <a href="<?php echo $w['linkedin']?>">linkdin</a><br>
+        <a href="<?php echo $w['github']?>">Github</a><br>
+        <a href="<?php echo $w['portfolio']?>">Portfolio</a><br>
+        <a href="<?php echo $w['linkedin']?>">LinkdIn</a><br>
 
     </div>
 

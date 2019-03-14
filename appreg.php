@@ -39,7 +39,16 @@
             <br>
             <input type="submit" value="Register">
         </form>
+        
+        
+        
+        
     </div>
+            
+       
+    <img src="https://a3-images.myspacecdn.com/images01/106/09e600d2e0b691e76854e78be1c845bb/600x600.jpg" alt="obt" width="280" height="100" class="center">
+    
+    
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="assets/js/jquery.js"></script>
@@ -50,5 +59,4 @@
 
     </script>
 </body>
-
 </html>
