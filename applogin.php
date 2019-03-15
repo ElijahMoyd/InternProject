@@ -24,7 +24,7 @@
 	
 	<div class="tainer">
 		<h2>Login</h2>
-		<form action="loginprocess.php" method="post">
+		<form action="assets/process/loginprocess.php" method="post" enctype="multipart/form-data">
 			<label>Email <br>
 				<input type="text" name="email">
 			</label>
