@@ -35,6 +35,7 @@ li a:hover {
   <li><a href="create.php">Add Student</a></li>
     <li> <a href="appreg.php">Register</a></li>
     <li> <a href="applogin.php">Login</a></li>
+    <li> <a href="Cohort.php">Cohort</a></li>
     </ul>
 
 

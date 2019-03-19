@@ -22,4 +22,28 @@
     "biopic": "users\/2\/",
     "resume": "users\/2\/",
     "employ": null
+}, {
+    "id": 3,
+    "name": "Student",
+    "cohort": "17",
+    "strengths": ["JavaScript", "CSS"],
+    "credential": ["Photoshop", "Javascript"],
+    "portfolio": "port.com",
+    "github": "git.com",
+    "linkedin": "linked.com",
+    "biopic": "users\/3\/exp.png",
+    "resume": "users\/3\/11mkleo-tiers01jpg.jpeg",
+    "employ": "true"
+}, {
+    "id": 4,
+    "name": "Student",
+    "cohort": "17",
+    "strengths": ["JavaScript"],
+    "credential": ["Photoshop", "Javascript"],
+    "portfolio": "port.com",
+    "github": "git.com",
+    "linkedin": "linked.com",
+    "biopic": "users\/4\/exp.png",
+    "resume": "users\/4\/11mkleo-tiers01jpg.jpeg",
+    "employ": "true"
 }]
