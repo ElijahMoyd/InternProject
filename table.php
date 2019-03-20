@@ -45,36 +45,11 @@
                 <th>Name</th>
                 <th>Cohort</th>
             </tr>
-            <tr>
-                <td>
-                <a href="detail.html">Name</a>
-                <td>Cohort</td>
-            </tr>
-            <tr>
-                <td>
-                    <a href="detail.html">Name</a>
-                <td>Cohort</td>
-            </tr>
-            <tr>
-                <td>
-                    <a href="detail.html">Name</a>
-                <td>Cohort</td>
-            </tr>
-            <tr>
-                <td>
-                    <a href="detail.html">Name</a>
-                <td>Cohort</td>
-            </tr>
-            <tr>
-                <td>
-                    <a href="detail.html">Name</a>
-                <td>Cohort</td>
-            </tr>
             <?php
 					$d = file_get_contents('assets/data/data.json');
 					$d = json_decode($d, true);
             
-        
+        `           
 					
 					foreach($d as $v => $o){
  

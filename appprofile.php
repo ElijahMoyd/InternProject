@@ -28,7 +28,7 @@ if( !isset($_SESSION["email"]) ){
     <div class="container">
         <h2>Profile</h2>
         <p>Email<br>
-            <?php echo `; ?>
+            <?php echo ; ?>
         </p>
     </div>
     <!-- Optional JavaScript -->
