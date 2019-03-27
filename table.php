@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+    
     <style>
 
 
@@ -32,14 +34,30 @@
 
 <body>
     <?php include("assets/partials/nav.php");?>
-
+      <form method="get">
     <div class="tainer">
         <div class="topnav">
-            <input type="text" placeholder="Search..">
+            
+            <input type="search" name="query">
+            <br>
+			<input type="submit" value="search now">
+            </form>
+             <?php
+           
+				$d = file_get_contents('assets/data/data.json');
+				$d = json_decode($d, true);
+				if(isset($_GET['query'])){
+					$x = $_GET['query'];
+				} else {
+					$x = '';
+				}
+       
+				 ?>
         </div>
 
-
-
+        
+     
+            
         <table>
             <tr>
                 <th>Name</th>
@@ -49,7 +67,7 @@
 					$d = file_get_contents('assets/data/data.json');
 					$d = json_decode($d, true);
             
-        `           
+                  
 					
 					foreach($d as $v => $o){
  
@@ -62,6 +80,7 @@
 				?>
         </table>
     </div>
+    
 </body>
 
 </html>

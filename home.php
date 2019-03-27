@@ -45,14 +45,7 @@
                 <th>Name</th>
                 <th>Cohort</th>
             </tr>
-            <?php
-					$d = file_get_contents('assets/data/data.json');
-					$d = json_decode($d, true);
-            
-        
-					
-					foreach($d as $v => $o){
-                        
+                  
                         
  
            echo '<tr>
