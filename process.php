@@ -54,6 +54,6 @@ array_push ($d, $a);
 $d = json_encode($d);
 file_put_contents('assets/data/data.json', $d);
 
-header('location: home.php');
+header('location: table.php');
 
 ?>

@@ -42,7 +42,7 @@
 
                 function addInput() {
                     document.getElementById('response').innerHTML += '<br/><input type="text" id="' + '" value="' + '" " + name="str[]" /><br/>';
-                    countBox += 1;
+                    countBox +=1;
                 }
 
             </script>

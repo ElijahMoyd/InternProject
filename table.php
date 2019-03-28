@@ -34,24 +34,25 @@
 
 <body>
     <?php include("assets/partials/nav.php");?>
-      <form method="get">
+    <div class="topnav">
+     
     <div class="tainer">
-        <div class="topnav">
-            
-            <input type="search" name="query">
+        
+             <form method="get">
+            <input type="search" name="name">
             <br>
-			<input type="submit" value="search now">
+			<input type="submit" name="submit" value="search">
             </form>
              <?php
            
 				$d = file_get_contents('assets/data/data.json');
 				$d = json_decode($d, true);
-				if(isset($_GET['query'])){
-					$x = $_GET['query'];
+				if(isset($_GET['name'])){
+					$d = $_GET['name'];
 				} else {
-					$x = '';
+					$o= '';
 				}
-       
+       foreach( $d as $v => $o )
 				 ?>
         </div>
 
